@@ -9,7 +9,11 @@ app = Flask(__name__)
 # INDEX ROUTE
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    return 'Hi!'
+    if request.method == "POST":
+        value = request.form['value']
+        return render_template("result.html", result=value)
+    else:
+        return render_template("index.html")
 
 
 
