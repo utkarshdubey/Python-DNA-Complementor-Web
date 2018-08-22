@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-  <h1>The Result is : {{result}}</h1>
-  </body>
-</html>
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>The Result is: <span>{{result}}</span></h1>
+{% endblock %}
