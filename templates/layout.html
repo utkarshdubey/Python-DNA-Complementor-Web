@@ -6,10 +6,39 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>DNA Complementor</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="/static/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <style media="screen">
+  *{
+    overflow:hidden;
+  }
+    .container-wrap{
+      padding-top: 8%;
+    }
+    #title-big{
+      font-size: 120px;
+      animation: bounceIn 2s;
+    }
+    .input-box{
+      width: 800px;
+      font-size: 18px;
+      text-align: center;
+      text-transform: uppercase;
+      animation: shake 2s;
+    }
+    .submit-button{
+      margin-top: 10px;
+      width: 800px;
+      background-color: black;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-{% block content %}
+<center>
+  {% block content %}
 
-{% endblock %}
+  {% endblock %}
+</center>
 </body>
 </html>
