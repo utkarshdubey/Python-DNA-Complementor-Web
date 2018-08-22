@@ -1,10 +1,14 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<h1>Hey Welcome to the DNA Complementer</h1>
-<form action="/" method="POST">
-  <input type="text" name="value">
-  <input type="submit" value="Enter">
-</form>
+
+<div class="container-wrap">
+  <h1 id="title-big">DNA Complementor</h1>
+  <form action="/" method="POST">
+    <input type="text" name="value" class="input-box" autocomplete="off">
+    <br>
+    <input type="submit" value="Enter" class="button button-primary submit-button">
+  </form>
+</div>
 
 {% endblock %}
