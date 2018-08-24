@@ -1,8 +1,13 @@
 # IMPORTS
 from flask import Flask, request, url_for, render_template
-
+import re
 # INITIALIZATION
 app = Flask(__name__)
+
+
+# FUNCTIONS
+
+
 
 # ROUTES
 
@@ -10,8 +15,8 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == "POST":
-        value = request.form['value']
-        return render_template("result.html", result=value)
+        result = request.form['value']
+        return render_template("result.html", result=result)
     else:
         return render_template("index.html")
 
